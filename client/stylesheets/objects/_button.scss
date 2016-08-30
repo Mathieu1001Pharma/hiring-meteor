@@ -1,0 +1,45 @@
+$btn-padding:           $base-spacing-unit * 1rem;
+$btn-padding--small:    $base-spacing-unit--small * 1rem;
+$btn-padding--large:    $base-spacing-unit--large * 1rem;
+
+.btn,
+%btn {
+    display: inline-block;
+    vertical-align: middle;
+    font: inherit;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    overflow: visible;
+    padding: $btn-padding;
+    border-width: 1px;
+    border-style: solid;
+    background-color: $white-color;
+
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        color: $gray-darker-color;
+    }
+
+    &::-moz-focus-inner {
+        border:  0;
+        padding: 0;
+    }
+}
+
+
+.btn-primary {
+    @extend %btn;
+    color: $white-color!important;
+    background: $primary-color;
+    border-color: $primary-color;
+
+    &:focus,
+    &:hover {
+        background: darken($primary-color, 10%);
+        border-color: darken($primary-color, 10%);
+    }
+}

@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    #COLORS
+\*------------------------------------*/
+
+$base-page-color:         #fff;
+$base-text-color:         #4b4b4b;
+
+$primary-color:           #ac64bd;
+$secondary-color:         #0074a1;
+$tertiary-color:          #f7f6f5;
+
+$white-color:             #fff;
+
+$gray-color:              #857d87;
+$gray-darker-color:       darken($gray-color, 15%);
+$gray-darken-color:       darken($gray-color, 25%);
+$gray-lighter-color:      lighten($gray-color, 35%);
+$gray-lighten-color:      lighten($gray-color, 40%);
+
+$link-color:              $primary-color;
+$link-color-hover:        darken($primary-color, 15%);
+
+$success-color:           #5ec151;
+$success-lighten-color:   lighten($success-color, 30%);
+
+$error-color:             #d00f0b;
+$error-lighten-color:     lighten($error-color, 35%);

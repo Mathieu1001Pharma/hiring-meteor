@@ -1,53 +1,42 @@
-%title {
-  font-size: 1.125em;
-  font-weight: bold;
-}
-
 .item {
-  @extend .panel;
-  border: 1px solid #ddd;
-  margin-bottom: 1.5em;
+  border-radius: 2px;
+
 
   p {
     padding: 5px;
     color: #151515;
 
     &.title {
-      @extend %title;
-      border-bottom: 1px solid #ddd;
-      margin: 0 3px;
+      font-weight: bold;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
     }
 
     &.desc {
       padding-left: 1.2em;
     }
   }
-
-  a {
-    color: darken(#151515, 5%);
-  }
 }
 
 $first: rgb(251, 156, 73);
 .bg-0 {
-  border-left: 8px solid $first;
-  border-top: 2px solid $first;
+  background-color: $first;
 }
 
 $second: rgb(114, 190, 91);
 .bg-1 {
-  border-left: 8px solid $second;
-  border-top: 2px solid $second;
+  background-color: $second;
 }
 
 $third: rgb(224, 113, 106);
 .bg-2 {
-  border-left: 8px solid $third;
-  border-top: 2px solid $third;
+  background-color: $third;
 }
 
 $fourth: rgb(83, 170, 203);
 .bg-3 {
-  border-left: 8px solid $fourth;
-  border-top: 2px solid $fourth;
+  background-color: $fourth;
 }
